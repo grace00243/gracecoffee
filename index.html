@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Grace Coffee</title>
+</head>
+<body>
+    <!--main  container that wrapped everything-->
+    <div id="main_container">
+        <!--section header-->
+            <header>
+                <div class="container_header">
+                    <div class= "container_text_header">
+                        <address><i class="fa fa-map-marker fa-1x"></i>  12, Partizansky avenue, Minsk, 220070, Belarus</address>
+                        <span class="text_date"><i class="fa fa-calendar" aria-hidden="true"></i>  Monday-Sunday 9:00 am - 19 pm</span>
+                        <p><i class="fa fa-phone"></i>  +1556870785</i></p>  
+                    </div>    
+                </div>
+                <!--section nav-->
+                    <nav id="navbar">
+                        <ul>
+                            <li class="active"><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav> 
+            </header>
+        
+        <!--section home-->
+        <section class="container_home" id="home">
+            <div>  
+                <span class="welcome_text">Welcome to Grace coffee online shop </span> 
+            </div>
+        </section>
+        <!--section about-->
+        <section class="container_about" id="about">
+            <div>
+                <h3>About</h3>
+                <p class="para_about">
+                    The Arabica coffee beans in our 55 Champion’s Edition are grown on volcanic soil at an altitude
+                    of over 5,000 feet, 
+                    between Lake Kivu and the Mitumba mountain range, in the Democratic Republic of the Congo.
+                    The oak barrel aging transforms this distinctly Congolese mix of orange flavor and dark
+                    chocolate aroma into an alcohol-free coffee with an enduring American bourbon finish. 
+                    The medium roast makes it suitable for all brewing methods. It’s a drink for craf
+                    coffee and whiskey lovers, alike.
+                    We proudly support projects that improve the economic sustainability
+                    of the DRC coffee farming communities where our beans are sourced.
+                </p>
+            </div>
+            <div>
+            </div>
+        </section>
+        <!--section menu-->
+        <section class="container_menu" id="menu">
+            <div>
+                <h3>COFFEE</h3>
+                <div>
+                    <span>Cappuccino</span><br>
+                    <span>Espresso</span><br>
+                    <span>Regular</span><br>
+                    <span>Lattes</span>
+                </div>
+            </div>
+            <div>
+                <h3>TEA</h3>
+                <div>
+                    <span>Lemon-Ginger</span><br>
+                    <span>Raspberry</span><br>
+                    <span>Lemon</span><br>
+                    <span>Chai</span>
+                </div>
+            </div>
+            <div>
+                <h3>FLAVOR</h3>
+                <div>
+                    <span>French Vanila</span><br>
+                    <span>Pumpkin Spice</span><br>
+                    <span>Hazelnut</span><br>
+                    <span>Vanila</span>
+                </div>
+            </div>  
+        </section>
+        <!--section contact-->
+        <section id="contact" class="container_contact"> 
+                    
+            <div class="container_form"> 
+                <h3>Contact</h3>  
+                <form action="/action_page.php">
+                <div class="row">
+                    <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write Your message in here.." style="height:100px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+                </form>
+            </div>        
+        </section>
+       
+
+        <script src="http://code.jquery.com/jquery-3.5.1.min.js" 
+                integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" 
+                crossorigin="anonymous">
+        </script>
+        <script type="text/javascript">
+            $(document).on('click','ul li',function(){
+                $(this).addClass('active').siblings().removeClass('active')
+            })
+        </script>
+    <footer>
+        <div class="social_media">
+            <span class="social_icon"><a href="https://www.linkedin.com/in/grace-kimbanzia-819939205 "><i class="fa fa-linkedin" style="font-size:30px;color:#fff;"></i></a></span>
+            <span class="social_icon"><a href=""><i class="fa fa-github" style="font-size:30px;color:#fff;"></i></a></span>
+            <span class="social_icon"><i class="fa fa-facebook-square" style="font-size:30px;color:#fff;"></i></span>
+            <span class="social_icon"><i class="fa fa-snapchat" style="font-size:30px;color:#fff;"></i></span>
+            <span class="social_icon"><i class="fa fa-twitter" style="font-size:30px;color:#fff;"></i></span>
+        </div>
+        <p>Grace coffee &copy; 2021</p>
+        <span>All rights reserved</span>
+    </footer>
+</div>
+</body>
+</html>

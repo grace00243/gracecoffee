@@ -1,0 +1,165 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+    font-family: "Leto",sans-serif;
+    color: #000;
+    line-height: 1.6;
+    height: 100vh;
+    
+    
+}
+#main_container{
+    height: 100%;
+    width: 100%;
+}
+.container_header{
+    position: fixed;
+    top: 0;  
+    display: grid;
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+}
+.container_text_header{
+    margin: 8px 0 8px 50px;
+}
+
+.welcome_text{
+    color: #fff;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #ab4c18;;
+    background-color: #ab4c18;
+    padding: 10px;
+    font-size: 19px;
+    text-transform: uppercase;
+    cursor: default;
+}
+/* flexing the navbar on the left side */
+#navbar ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;  
+    
+}
+#navbar ul li{
+    margin: 0 1rem;
+    padding: 1rem;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+#navbar ul li a:hover{
+    color: #ab4c18;
+}
+.active{
+    text-decoration: underline;
+}
+/* all the section put in the center as columns */
+section{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-auto-flow: column;
+    text-align: center;
+    column-gap: 60px;
+    height: 100vh;
+  
+}
+section h3{
+    font-size: 4rem;
+}
+
+.para_about{
+    font-size: 1.4em;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    width: 70%;
+    margin-left: 200px;
+    text-align: left;
+   
+}
+.container_home{
+    background-image: url("/images/backimage.jpg"); 
+    background-color: #cccccc; /* Used if the image is unavailable */
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+.container_menu{
+    color: #fff;
+    background-image: url("/images/pexels-satya-deep-3158814.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+span .text_date{
+    font-size: 14px;
+}
+/* css for the form */
+input[type=text], select, textarea {
+    width: 600px;
+    padding: 18px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  .social_icon{
+      padding: 5px;
+  }
+  span :hover {
+        -ms-transform: scaleY(0.9); 
+        transform: scaleY(0.9);
+        transition-timing-function: ease-in-out;
+  }
+  /* css for footer section */
+  footer{
+      background-color: black;
+      color: #fff;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      line-height: 1.9;
+      
+  }
+  
